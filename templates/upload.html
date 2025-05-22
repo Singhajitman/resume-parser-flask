@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Upload Resume</h2>
+  <form method="post" enctype="multipart/form-data">
+    <label for="resume">Select a Resume File (PDF or DOCX):</label><br>
+    <input type="file" name="resume" id="resume" accept=".pdf,.docx" required><br><br>
+    <button type="submit">Upload & Parse</button>
+  </form>
+
+  {% if message %}
+    <p style="margin-top: 20px; color: {{ 'green' if success else 'red' }};">{{ message }}</p>
+  {% endif %}
+{% endblock %}

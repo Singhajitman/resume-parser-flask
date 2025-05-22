@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Edit Candidate</h2>
+  <form method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" name="name" id="name" value="{{ candidate.name }}" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" name="email" id="email" value="{{ candidate.email }}" required><br><br>
+
+    <label for="phone">Phone:</label><br>
+    <input type="text" name="phone" id="phone" value="{{ candidate.phone }}"><br><br>
+
+    <label for="skills">Skills:</label><br>
+    <textarea name="skills" id="skills" rows="4">{{ candidate.skills }}</textarea><br><br>
+
+    <button type="submit">Save Changes</button>
+  </form>
+{% endblock %}

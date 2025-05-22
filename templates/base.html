@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill View</title>
+  <link rel="icon" href="{{ url_for('static', filename='logo.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header style="display: flex; align-items: center; gap: 10px; padding: 10px; background-color: #f8f8f8; border-bottom: 1px solid #ccc;">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Wissen Logo" height="40">
+    <h1 style="margin: 0; font-size: 24px; color: #333;">Skill View</h1>
+  </header>
+  
+  <main style="padding: 20px;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul class="flashes">
+          {% for category, message in messages %}
+            <li class="flash {{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
