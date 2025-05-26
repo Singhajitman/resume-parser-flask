@@ -1,20 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Edit Candidate</h2>
+  <h2>Edit Candidate Details</h2>
   <form method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" name="name" id="name" value="{{ candidate.name }}" required><br><br>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="{{ resume.name }}" required>
 
-    <label for="email">Email:</label><br>
-    <input type="email" name="email" id="email" value="{{ candidate.email }}" required><br><br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" value="{{ resume.email }}" required>
 
-    <label for="phone">Phone:</label><br>
-    <input type="text" name="phone" id="phone" value="{{ candidate.phone }}"><br><br>
+    <label for="phone">Phone</label>
+    <input type="text" name="phone" id="phone" value="{{ resume.phone }}">
 
-    <label for="skills">Skills:</label><br>
-    <textarea name="skills" id="skills" rows="4">{{ candidate.skills }}</textarea><br><br>
+    <label for="skills">Skills</label>
+    <textarea name="skills" id="skills" rows="4">{{ resume.skills }}</textarea>
 
     <button type="submit">Save Changes</button>
+    <a href="{{ url_for('search') }}" class="btn btn-secondary">Cancel</a>
   </form>
 {% endblock %}

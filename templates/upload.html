@@ -1,14 +1,67 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Upload Resume</h2>
+  <h2>Effortless Talent Discovery & Management</h2>
+  <p>Streamline your recruitment process with SkillView, your intelligent tool for extracting key information from resumes and managing candidate data efficiently.</p>
+
   <form method="post" enctype="multipart/form-data">
-    <label for="resume">Select a Resume File (PDF or DOCX):</label><br>
-    <input type="file" name="resume" id="resume" accept=".pdf,.docx" required><br><br>
+    <label for="resume">Select a Resume File (PDF or DOCX)</label>
+    <input type="file" name="resume" id="resume" accept=".pdf,.docx" required>
     <button type="submit">Upload & Parse</button>
   </form>
 
-  {% if message %}
-    <p style="margin-top: 20px; color: {{ 'green' if success else 'red' }};">{{ message }}</p>
-  {% endif %}
+  {# NEW: Feature 1 - Seamless Integrations #}
+  <div class="highlight-section">
+    <h3>Seamless Integrations for a Unified HR Ecosystem</h3>
+    <p>SkillView isn't just a standalone tool; it's engineered for **effortless integration with your existing enterprise HR platforms.** Harmonize your talent data and eliminate manual transfers, ensuring a single source of truth for your workforce.</p>
+    <div class="integration-logos">
+      <span>SAP SuccessFactors</span>
+      <span>Workday</span>
+      <span>Oracle HCM Cloud</span>
+      <span>Microsoft Dynamics 365</span>
+      <span>Greenhouse</span>
+      <span>BambooHR</span>
+      <span>And many more...</span>
+    </div>
+    <p>Our robust API and flexible architecture allow for **bidirectional data flow**, empowering you to unify candidate profiles, accelerate onboarding, and leverage richer talent insights across your entire organization, globally.</p>
+  </div>
+
+  {# NEW: Feature 2 - Introducing Wissen Sage AI #}
+  <div class="highlight-section wissen-sage-section">
+    <h3>Introducing Wissen Sage: Your AI-Powered Knowledge Guide</h3>
+    <p>Beyond talent acquisition, SkillView is poised to integrate with **Wissen Sage**, our proprietary AI backend designed to revolutionize how your organization accesses and leverages its internal knowledge.</p>
+    <p>With **Wissen Sage**, you can:</p>
+    <p><strong><span style="color: #4CAF50;">Instantly Identify Internal Experts & Knowledge:</span></strong> Imagine seamlessly matching incoming candidate skills with your existing workforce's expertise or internal documentation. Wissen Sage intelligently analyzes resumes against your internal "Wissen" (knowledge bases, project histories, team profiles) to help you:
+        <ul>
+            <li>**Accelerate Internal Staffing:** Quickly find the perfect internal candidate for new projects by matching skills to available talent.</li>
+            <li>**Facilitate Knowledge Transfer:** Connect new hires with existing experts or relevant internal resources to fast-track their learning and integration.</li>
+            <li>**Boost Project Success:** Ensure teams have access to the right internal knowledge and experienced personnel for critical initiatives.</li>
+        </ul>
+    This transforms how you leverage your organizational intelligence for enhanced efficiency and strategic talent deployment.</p>
+  </div>
+
+
+  {# Existing general features section #}
+  <div class="features-section">
+    <h3>Unlock the Power of Smart Recruitment with SkillView</h3>
+    <p>Move beyond manual data entry. SkillView automates the tedious task of resume parsing, allowing you to focus on what truly matters: finding the perfect candidate.</p>
+    <ul class="features-list">
+      <li>
+        <strong>Save Time & Boost Productivity</strong>
+        <p>Automate resume data entry, reducing hours of manual work to mere seconds. Our intelligent parser quickly extracts names, contact details, and skills.</p>
+      </li>
+      <li>
+        <strong>Enhance Data Accuracy</strong>
+        <p>Minimize human error with precise extraction. Get standardized, structured data ready for your candidate database, every time.</p>
+      </li>
+      <li>
+        <strong>Effortless Candidate Search</strong>
+        <p>Instantly search your entire candidate pool by skills, name, email, or phone. Find the right talent faster with powerful search capabilities.</p>
+      </li>
+      <li>
+        <strong>Simple & Intuitive Interface</strong>
+        <p>Designed for recruiters and HR professionals, SkillView offers a clean, user-friendly experience that makes managing resumes a breeze.</p>
+      </li>
+    </ul>
+  </div>
 {% endblock %}
