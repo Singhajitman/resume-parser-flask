@@ -454,3 +454,56 @@ footer {
         padding: 8px 12px;
     }
 }
+/* Add this to the END of your static/css/style.css file */
+
+/* Styling for the list of Wissen Sage capabilities */
+.sage-capabilities {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 30px 0; /* Add some vertical space above/below the list */
+    display: grid; /* Use CSS Grid for a clean, multi-column layout */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 25px; /* Space between each capability box */
+}
+
+.sage-capabilities li {
+    background-color: #ffffff; /* White background for each capability box */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Soft shadow for a subtle lift */
+    text-align: left; /* Ensure text inside aligns left */
+    border: 1px solid #eef5ee; /* Very light green border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.sage-capabilities li:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* Stronger shadow on hover */
+}
+
+.sage-capabilities li h4 {
+    color: #2c3e50; /* Dark heading color */
+    font-size: 1.5em; /* Larger font size for the capability title */
+    margin-top: 0;
+    margin-bottom: 15px; /* Space below the title */
+    font-weight: 600; /* Bold, but not too heavy */
+}
+
+.sage-capabilities li p {
+    font-size: 1em; /* Standard paragraph size */
+    color: #555; /* Slightly lighter text color */
+    line-height: 1.6; /* Good readability */
+}
+
+/* Responsive adjustment for sage-capabilities on smaller screens */
+@media (max-width: 768px) {
+    .sage-capabilities {
+        grid-template-columns: 1fr; /* Stack capabilities in a single column */
+    }
+    .sage-capabilities li {
+        padding: 20px; /* Slightly less padding on mobile */
+    }
+    .sage-capabilities li h4 {
+        font-size: 1.3em; /* Slightly smaller heading on mobile */
+    }
+}
