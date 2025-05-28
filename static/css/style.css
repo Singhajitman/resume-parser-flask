@@ -521,24 +521,3 @@ footer {
    as this new approach works better for the table display.
    The .search-form and .results-section h3 styles I gave you previously for search.html are still good to keep. */
 
-/* Remove default outline/border from buttons, especially delete button */
-.btn-danger {
-    outline: none; /* Removes the default focus outline (the "white box") */
-    border: none;  /* Ensures no explicit border is present */
-    box-shadow: none; /* Removes any default box-shadow that might look like a border */
-}
-
-/* Ensure these properties are also applied on focus or active states if needed */
-.btn-danger:focus,
-.btn-danger:active {
-    outline: none;
-    border: none;
-    box-shadow: none;
-}
-
-/* Optional: If you want to be extra sure for all buttons, though btn-danger should cover it */
-.btn:focus,
-.btn:active {
-    outline: none;
-    box-shadow: none;
-}
