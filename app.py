@@ -242,7 +242,7 @@ def search():
         # If no search query was provided at all, show all resumes
         resumes = Resume.query.all()
 
-    return render_template('results.html', resumes=resumes, search_query=search_query)
+    return render_template('search.html', resumes=resumes, search_query=search_query)
 
 
 @app.route('/edit/<int:resume_id>', methods=['GET', 'POST'])
