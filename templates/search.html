@@ -34,7 +34,20 @@
             <td>{{ resume.email }}</td>
             <td>{{ resume.phone }}</td>
             <td>{{ resume.phone }}</td> {# This was a typo, likely should be skills #}
-            <td>{{ resume.skills }}</td> {# Display skills #}
+            <td>
+              {% set skills_string = resume.skills %}
+              {% set max_display_length = 70 %} {# You can adjust this number based on your preference #}
+
+              {% if skills_string and (skills_string | length > max_display_length) %}
+                <span title="{{ skills_string }}">
+                  {{ skills_string[:max_display_length] }}...
+                </span>
+              {% else %}
+                <span title="{{ skills_string if skills_string else 'No skills listed' }}">
+                  {{ skills_string if skills_string else 'N/A' }}
+                </span>
+              {% endif %}
+            </td> {# Display skills #}
             <td>
               <div class="action-buttons">
                 {# REMOVED THE PROBLEMTAIC 'VIEW' BUTTON HERE #}
