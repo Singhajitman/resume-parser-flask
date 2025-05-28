@@ -213,7 +213,7 @@ def upload_resume():
 
 
 @app.route('/search', methods=['GET'])
-def search_resumes():
+def search():
     search_query = request.args.get('query', '').strip() # Get the query and remove leading/trailing whitespace
     resumes = []
 
