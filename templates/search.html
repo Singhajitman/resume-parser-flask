@@ -6,10 +6,6 @@
   <form method="get" action="{{ url_for('search') }}" class="search-form">
     <input type="text" name="query" placeholder="Search by name, email, phone, or skill..." value="{{ search_query if search_query }}">
     <button type="submit">Search</button>
-    {# Add a clear search button if a query is active, for better user experience #}
-    {% if search_query %}
-      <a href="{{ url_for('search') }}" class="btn btn-secondary clear-search-btn">Clear Search</a>
-    {% endif %}
   </form>
 
   {# Conditional messages: simplified logic using 'search_query' and 'resumes' #}
