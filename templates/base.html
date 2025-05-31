@@ -7,20 +7,28 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Segoe+UI:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container header-content">
             <div class="app-brand">
-                <a href="{{ url_for('upload_resume') }}" class="app-name">SkillView</a> {# NEW: Linked SkillView name #}
+                <a href="{{ url_for('upload_resume') }}" class="app-name">SkillView</a>
             </div>
             <nav>
                 <ul>
+                    {# Corrected: Wissen Sage link wrapped in an <li> #}
+                    <li>
+                        <a href="https://wissensagemodel2.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                            Wissen Sage (beta)
+                        </a>
+                    </li>
                     <li><a href="{{ url_for('upload_resume') }}">Upload Resume</a></li>
                     <li><a href="{{ url_for('search') }}">Search Candidates</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+</body>
 
     <main class="container">
         {% with messages = get_flashed_messages(with_categories=true) %}
