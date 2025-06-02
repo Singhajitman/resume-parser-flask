@@ -27927,3 +27927,83 @@ CCNA
 CCNP
 Checkpoint
 Cisco PIX Firewall Certified
+Generative AI
+LLMs
+Langchain
+Transformer
+Encoder-Decoder
+RAG
+CrewAi
+ Agents
+LCEL
+Langraph
+Output Paraser
+Memory
+Hyperparameters of LLM
+LLM chains
+Document Loaders
+Map
+Conversational Memory
+TextSplitter
+RAGA
+GAN
+Parameter Efficient Fine Tuning
+LORA
+qLORA
+Gradio
+HNSW
+Retrivals
+Prompt Engineering
+Vector Database
+HuggingFace
+GPT Models
+OPEN AI
+Whisper
+Llama2
+GEMINI
+Grok
+Python Libraries
+TensorFlow
+Keras
+OpenCV
+NLTK
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Transformer
+Machine Learning
+Deep Learning
+BERT
+LSTM
+CNN
+RNN
+Linear Regression 
+Logistic Regression
+K-NN
+K-Means
+Decision Trees
+Random Forest
+Boosting Word 
+Word2Vec
+GloVe
+Natural Language Processing
+Text Processing
+ Tokenization
+ Stemming
+ Lemmatization 
+Data Processing
+ Preprocessing
+ Regex
+Cloud Services
+AWS
+Jupyter
+Git
+SQL
+Google Sheets
+Flask
+Python
+Machine Learning
+NLP
+Deep Learning
+Time Series Analysis
