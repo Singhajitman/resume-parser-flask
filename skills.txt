@@ -27857,3 +27857,73 @@ CompuWeigh GMS
 Data entry software
 Distributed control system DCS
 Microsoft Excel
+Java
+IT Procurement & Purchase Order Management 
+Vendor & Supplier Coordination 
+Asset Lifecycle Management 
+IT Contract & License Management 
+Cost Negotiation & Budget Tracking 
+Procurement Documentation & Reporting 
+IT Products & Services Knowledge 
+Inventory Control & Forecasting 
+Invoice & Billing Reconciliation
+Microsoft Endpoint Administrator
+IT Service Management Framework 
+ ITIL Foundation V4
+ Windows NT 4.0 / 2000 / 2003 / 2008 R2 / 2012 R2 / 2016 / 2022
+Windows NT 4.0 / 2000 / 2003 / 2008 R2 / 2012 R2 / 2016 / 2022
+Exchange Server
+Exchange Server 2000
+Exchange Server 2003
+Exchange Server 2007
+Exchange Server 2010
+Exchange Server 2013
+Exchange Server 2016
+Microsoft Azure
+Microsoft Azure Cloue
+Microsoft Azure AD
+Microsoft Azure Virtual Machines
+Cisco Routers
+Cisco Switches
+Cisco Routers (1600/1700/2500/2600/7204VxR)
+Cisco Switches (2900, 2948, 2924, 6513, 6509)
+Checkpoint Firewall
+Cisco PIX Firewall
+VMware ESXi 5.5
+Microsoft Hyper-V
+Active Directory 
+vmware
+DNS
+DHCP
+FTP
+HTTP
+Telnet
+VNC
+Rdesktop
+Fiber Optic Cabling 
+PowerShell
+Azure AD
+Azure Cloud Management
+VMware 
+Direct Access
+Citrix
+RFS
+Backup strategies 
+Mailbox recovery
+DNS
+DNS Troubleshooting
+ServiceNow 
+Incident management
+Technical Architecture
+Infrastructure Auditing
+Team Leadership
+Escalation Handling
+Data Center Management
+Migration Projects
+ADMT
+MCSE
+Microsoft Certified Systems Engineer
+CCNA
+CCNP
+Checkpoint
+Cisco PIX Firewall Certified
